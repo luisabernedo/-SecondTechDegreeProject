@@ -19,10 +19,10 @@
     margin-bottom: 7px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 1.5em;
-    color: black;
-
+    font-size: 1em;
+    font-weight: bold;
   }
+
 
 
 
@@ -33,7 +33,8 @@
   }
 
   h1,
-  h2 {
+  h2,
+  h3 {
     text-align: center;
   }
 
@@ -49,7 +50,14 @@
      list-style-type: none;
   }
 
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
+  nav {
+    margin-bottom: 30px;
+  }
 
 /*-----Class selectors-----*/
   .wrapper {
@@ -60,11 +68,11 @@
     background-color: #f6f6f6;
     display: block;
     margin-top: 0;
-    padding-top: 1px;
+    padding-top: 5px;
   }
 
   .name {
-    font-size: 2.5em;
+    font-size: 1.8em;
   }
 
   .col {
@@ -77,11 +85,24 @@
     width: 100%;
   }
 
+  .col h3 {
+    margin-top: 30px;
+  }
+
+  .col p {
+    margin-bottom: 30px;
+
+  }
+
+  .profile {
+    margin-top: 40px;
+  }
+
   .col,
   .profile,
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
 
@@ -91,9 +112,56 @@
 
   .profile-img {
     display: block;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .profile p {
+    font-size: 1em;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  .primary {
+    padding-top: 30px;
+  }
+
+  .primary h2 {
+    font-size: 1em;
+    padding-bottom: 30px;
+  }
+
+  .senary p {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  .contact {
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .contact h3 {
+    margin-bottom: 20px
+  }
+
+  .contact p {
+    margin-bottom: 20px;
+  }
+
+  .contact li{
+    text-align: center;
+    word-spacing: 5px;
+
+  }
+  .contact .phone {
+    word-spacing: 49px;
+    letter-spacing: 1.3px;
+    margin-bottom: 10px;
+  }
+
 
 /*-----Psuedo-Class selectors-----*/
 
@@ -104,9 +172,36 @@
 
 /*-----Layout-----*/
 
+  .footer {
+    margin-top: 25px;
+  }
+
+  .footer-name {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
+  .footer-id {
+    display: inline-block;
+    float: right;
+    width: 50%;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    text-align: right;
+  }
 
 
+  /* ---- Float clearfix ---- */
 
+  	.clearfix::after {
+  		content: " ";
+  		display: table;
+  		clear: inline;
+  	}
+  }
 
 
 /*-----Media Queries 768px-----*/
